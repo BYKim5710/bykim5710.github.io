@@ -10,8 +10,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="신통신통회 YouTube 채널" />
   <meta property="og:description" content="종교혁명 시리즈를 구독하고 새 영상을 가장 먼저 만나보세요." />
-  <meta property="og:image" content="https://bykim5710.github.io/series.kr/ep.01-koor.png?v=20251028" />
-  <meta property="og:image:secure_url" content="https://bykim5710.github.io/series.kr/ep.01-koor.png?v=20251028" />
+  <meta property="og:image" content="https://bykim5710.github.io/series.kr/og-latest.png" />
+  <meta property="og:image:secure_url" content="https://bykim5710.github.io/series.kr/og-latest.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -19,51 +19,45 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://bykim5710.github.io/series.kr/ep.01-koor.png?v=20251028" />
   <meta name="twitter:title" content="신통신통회 YouTube 채널" />
   <meta name="twitter:description" content="종교혁명 시리즈를 구독하고 새 영상을 가장 먼저 만나보세요." />
+  <meta name="twitter:image" content="https://bykim5710.github.io/series.kr/og-latest.png" />
+
+  <link rel="canonical" href="https://bykim5710.github.io/series.kr/channel.html" />
 
   <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
     body {
-      font-family: system-ui, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      margin: 0; height: 100svh; display: grid; place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: #fafafa;
     }
-    .container {
-      text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 24px 30px;
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    .card {
+      width: min(640px, 92vw);
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 14px;
+      padding: 24px 28px; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,.05);
     }
+    h1 { font-size: 22px; margin: 0 0 10px; }
+    p  { margin: 0; color: #4b5563; line-height: 1.5; }
     .btn {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 12px 20px;
-      background-color: #cc0000;
-      color: white;
-      border-radius: 8px;
-      font-weight: bold;
+      display: inline-block; margin-top: 18px; padding: 12px 18px;
+      background: #cc0000; color: #fff; font-weight: 700; border-radius: 10px;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>신통신통회 YouTube 채널로 이동합니다...</h2>
-    <p>잠시 후 자동으로 이동합니다.<br>바로 이동하려면 아래 버튼을 누르세요.</p>
-    <a href="https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1" class="btn">🔔 구독 팝업으로 이동</a>
+  <div class="card">
+    <h1>신통신통회 YouTube 채널로 이동합니다…</h1>
+    <p>잠시 후 자동으로 이동합니다. 바로 이동하려면 아래 버튼을 눌러주세요.</p>
+    <a class="btn" href="https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1">🔔 구독 팝업으로 이동</a>
   </div>
 
   <script>
-    // JS만으로 이동 (스크래퍼는 JS 실행 안 함 → OG 이미지 유지)
-    const botPattern = /(facebook|twitter|slack|discord|telegram|whatsapp|kakao|naver|google|bing|yeti)/i;
-    if (!botPattern.test(navigator.userAgent)) {
+    // 스크래퍼(페북/카톡/트위터/검색봇)는 JS를 실행하지 않음 → OG 썸네일(og-latest.png) 고정 노출
+    const botUa = /(facebook|twitter|slack|discord|telegram|whatsapp|kakao|naver|google|bing|yeti|bot)/i;
+    if (!botUa.test(navigator.userAgent)) {
       setTimeout(() => {
         location.href = "https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1";
       }, 1200);
