@@ -1,0 +1,95 @@
+!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>신통신통회 시리즈 안내 | NCG</title>
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://bykim5710.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="신통신통회 시리즈 안내 | NCG" />
+  <meta property="og:description" content="전체 시리즈, PDF, 유튜브 채널로 바로 이동하세요." />
+  <!-- NCG_Series_Guide 저장소의 OG 이미지를 절대경로로 사용 -->
+  <meta property="og:image" content="https://bykim5710.github.io/NCG_Series_Guide/og-default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="신통신통회 시리즈 안내 | NCG" />
+  <meta name="twitter:description" content="전체 시리즈, PDF, 유튜브 채널로 바로 이동하세요." />
+  <meta name="twitter:image" content="https://bykim5710.github.io/NCG_Series_Guide/og-default.jpg" />
+
+  <style>
+    :root {
+      --bg: #0a0f14;
+      --panel: #111c27;
+      --text: #e6f1f7;
+      --muted: #99b3c7;
+      --accent: #29a35a;
+      --accent-2: #1d8649;
+      --border: #233445;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; height:100%; }
+    body {
+      font-family: Pretendard, "Noto Sans KR", Segoe UI, Roboto, Apple SD Gothic Neo, Malgun Gothic, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+    }
+    .card {
+      width: min(720px, 92vw);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.3);
+      padding: 28px;
+      text-align: center;
+    }
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    p.lead { color: var(--muted); margin: 0 0 18px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 0 22px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: #0f1720;
+      color: var(--text);
+      transition: transform .06s ease, background .2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn.primary { background: var(--accent); border-color: transparent; color: #0a160f; }
+    .btn.primary:hover { background: var(--accent-2); color: #eaf7ef; }
+    .links { display: grid; gap: 10px; margin-top: 10px; }
+    small a { color: var(--muted); }
+    small a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>신통신통회 시리즈 안내</h1>
+    <p class="lead">전체 시리즈, PDF, 유튜브 채널로 바로 이동하세요.</p>
+
+    <div class="row">
+      <a class="btn primary" href="https://bykim5710.github.io/NCG_Series_Guide/guide.html?v=3">전체 시리즈 보기</a>
+      <a class="btn" href="https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1">YouTube 채널</a>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="https://bykim5710.github.io/NCG_Series_Guide/oness-god-review_ko.pdf">『하나님과의 대화』 추천사(PDF)</a>
+      <a class="btn" href="https://bykim5710.github.io/NCG_Series_Guide/soul-and-zero-review_ko.pdf">『영과 영』 추천사(PDF)</a>
+      <a class="btn" href="https://bykim5710.github.io/NCG_Series_Guide/nosome_ko.pdf">『무유(Nosome)』 PDF</a>
+    </div>
+
+    <p class="lead" style="margin-top:16px;">
+      <small>공식 안내: <a href="https://bykim5710.github.io/NCG_Series_Guide/">bykim5710.github.io/NCG_Series_Guide/</a></small>
+    </p>
+  </main>
+</body>
+</html>
