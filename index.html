@@ -3,183 +3,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>신통신통회 종교혁명 시리즈 | 안전모드</title>
 
-  <!-- Canonical -->
+  <!-- 절대 외부로 튀지 않도록 OG도 자가 도메인만 -->
   <link rel="canonical" href="https://bykim5710.github.io/series/" />
-
-  <title>신통신통회 종교혁명 시리즈 | NCG Series</title>
-  <meta name="description" content="신통신통회 종교혁명 시리즈: 동영상, PDF, 보도자료, 추천사, 가이드 모음." />
-  <meta name="keywords" content="신통신통회, 종교혁명, 김병윤, NCG, 영과영, 하나님과의 대화, 무유, Nosome" />
-  <meta name="author" content="Byung Youn Kim, Chairman of the New Consilience Group (NCG)">
-
-  <!-- Open Graph -->
+  <meta name="description" content="인앱에서도 채널로 이동하지 않도록 잠금한 안전모드 랜딩. 시리즈 가이드, 보도자료, 추천사 미리보기." />
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="NCG Series">
-  <meta property="og:title" content="신통신통회 종교혁명 시리즈 | NCG Series">
-  <meta property="og:description" content="동영상, PDF, 보도자료, 추천사, 시리즈 가이드 한 곳에서 보기.">
+  <meta property="og:title" content="신통신통회 종교혁명 시리즈 | 안전모드">
+  <meta property="og:description" content="인앱에서도 튀지 않게 내부 링크만 제공합니다.">
   <meta property="og:url" content="https://bykim5710.github.io/series/">
-  <!-- OG 대표 이미지 경로 확인 필요 -->
-  <meta property="og:image" content="https://bykim5710.github.io/series/og-default.jpg?v=20251022">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="신통신통회 종교혁명 시리즈 | NCG Series">
-  <meta name="twitter:description" content="동영상, PDF, 보도자료, 추천사, 시리즈 가이드 한 곳에서 보기.">
-  <meta name="twitter:image" content="https://bykim5710.github.io/series/og-default.jpg?v=20251022">
-
-  <!-- Favicon (선택) -->
-  <link rel="icon" href="/favicon.ico?v=20251022">
+  <meta property="og:image" content="https://bykim5710.github.io/series/og-default.jpg?v=20251022a">
 
   <style>
-    :root {
-      --bg: #0b0c0f;
-      --card: #13151a;
-      --accent: #a8ff60;
-      --text: #e7e9ee;
-      --muted: #9aa3b2;
-      --border: #22252d;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans KR, Apple SD Gothic Neo, sans-serif; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 960px; margin: 32px auto; padding: 16px; }
-    header { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
-    .title { font-size: clamp(22px, 4vw, 34px); font-weight: 800; letter-spacing: -0.3px; }
-    .subtitle { color: var(--muted); font-size: 15px; line-height: 1.6; }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    @media (min-width: 760px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px;
-      box-shadow: 0 10px 24px rgba(0,0,0,.25);
-    }
-    .card h3 { margin: 0 0 10px; font-size: 18px; }
-    .btnrow { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      padding: 10px 14px; border-radius: 999px;
-      background: #1b1f27; border: 1px solid var(--border); color: var(--text);
-      font-weight: 700; font-size: 14px; letter-spacing: -.2px;
-      text-decoration: none; cursor: pointer;
-    }
-    .btn:hover { background: #232834; text-decoration: none; }
-    .btn.accent { background: var(--accent); color: #102010; border-color: transparent; }
-    .btn.accent:hover { filter: brightness(0.95); }
-    .list { display: block; padding: 8px 0; border-bottom: 1px dashed #2a2f38; font-size: 15px; }
-    .hint { color: var(--muted); font-size: 13px; margin-top: 6px; }
-    footer { margin: 26px 0 12px; color: var(--muted); font-size: 13px; text-align: center; }
-    .section-title { font-weight: 800; margin: 10px 0 6px; }
-    #endorsements { scroll-margin-top: 12px; }
-    #press { scroll-margin-top: 12px; }
-    .badge { font-size: 12px; color:#111; background: var(--accent); border-radius: 6px; padding:2px 8px; font-weight:800; margin-left:8px; }
+    :root { --bg:#0b0c0f; --card:#13151a; --text:#e7e9ee; --muted:#9aa3b2; --border:#232630; --accent:#a8ff60; }
+    * { box-sizing:border-box }
+    html,body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Noto Sans KR,Apple SD Gothic Neo,sans-serif }
+    a { color:var(--accent); text-decoration:none }
+    .wrap { max-width:960px; margin:28px auto; padding:16px }
+    .title { font-size:clamp(22px,4vw,32px); font-weight:800 }
+    .subtitle { color:var(--muted); margin-top:6px }
+    .grid { display:grid; grid-template-columns:1fr; gap:14px; margin-top:18px }
+    @media(min-width:760px){ .grid{ grid-template-columns:1fr 1fr } }
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px }
+    .card h3{ margin:0 0 10px }
+    .btnrow{ display:flex; flex-wrap:wrap; gap:10px; margin-top:8px }
+    .btn{ background:#1b1f27; border:1px solid var(--border); color:var(--text); border-radius:999px; padding:10px 14px; font-weight:800 }
+    .btn:hover{ background:#232834 }
+    .list{ display:block; padding:8px 0; border-bottom:1px dashed #2b2f38 }
+    .hint{ color:var(--muted); font-size:13px; margin-top:8px }
+    footer{ color:var(--muted); font-size:13px; text-align:center; margin:26px 0 10px }
   </style>
 
   <script>
-    function isMobile() {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
-    function isInApp() {
-      const ua = navigator.userAgent || '';
-      // 카카오/페북/인스타 인앱 브라우저 감지
-      return /KAKAOTALK|FBAN|FBAV|Instagram/i.test(ua);
-    }
-
-    /**
-     * PDF 열기: 우선 PDF.js(viewer.html) → 실패/인앱/모바일이면 Google Viewer로 폴백 → 최후에 직접 링크
-     * href: 실제 PDF 경로 (절대경로 권장: /파일명.pdf)
-     */
-    function openPDF(href, e) {
-      if (e) e.preventDefault();
-      const encoded = encodeURIComponent(href);
-      const pdfjsUrl = `/viewer.html?file=${encoded}`;
-      const googleUrl = `https://drive.google.com/viewerng/viewer?embedded=1&url=${location.origin}${href}`;
-
-      // 인앱/모바일에서는 바로 Google Viewer가 더 안정적
-      const targetUrl = (isMobile() || isInApp()) ? googleUrl : pdfjsUrl;
-
-      // 새 탭에서 시도
-      const w = window.open(targetUrl, '_blank', 'noopener,noreferrer');
-      if (!w) {
-        // 팝업 차단 시 현재 탭 열기
-        location.href = targetUrl;
-      }
+    // 내부 PDF 미리보기 전용 (외부 도메인 사용 금지)
+    function openPDF(path, e){
+      if(e) e.preventDefault();
+      // 루트 기준 절대경로만 허용
+      if(!path.startsWith('/')) path = '/' + path;
+      // 내부 PDF.js 뷰어만 사용 (인앱 외부 튐 방지)
+      var url = '/viewer.html?file=' + encodeURIComponent(path);
+      location.href = url; // target=_self
     }
   </script>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="title">신통신통회 종교혁명 시리즈 <span class="badge">Ep.01–16</span></div>
-      <div class="subtitle">
-        동영상, PDF 보도자료·추천사, 가이드를 한 곳에서 제공합니다.  
-        카카오톡/페이스북 인앱에서도 **바로 보기**가 안정적으로 열리도록 구성했습니다.
-      </div>
-      <div class="btnrow">
-        <!-- 시리즈 가이드 바로가기 (KR/EN) -->
-        <a class="btn accent" href="/NCG_Series_Guide_KR/guide.html?v=3">📘 시리즈 안내 보기 (KR)</a>
-        <a class="btn" href="/NCG_Series_Guide_EN/guide.html?v=1">📘 Series Guide (EN)</a>
-        <!-- 유튜브 채널/전체 시리즈 -->
-        <a class="btn" href="https://bykim5710.github.io/series/" target="_blank" rel="noopener">🌐 메인 시리즈 페이지</a>
-        <a class="btn" href="https://www.youtube.com/@bykim5710" target="_blank" rel="noopener">▶ YouTube 채널</a>
-      </div>
-    </header>
+    <div class="title">신통신통회 종교혁명 시리즈 (안전모드)</div>
+    <div class="subtitle">인앱(카카오톡/페이스북)에서도 <b>다른 채널로 이동하지 않도록</b> 외부 링크를 모두 제거했습니다.</div>
 
     <div class="grid">
-      <!-- 보도자료(Press Releases) -->
-      <section id="press" class="card">
-        <h3>📣 보도자료 (Press Releases)</h3>
-
-        <!-- 파일 경로를 실제 파일명에 맞춰 확인/수정하세요 -->
-        <a class="list" href="#" onclick="openPDF('/soul-and-zero_press_ko.pdf?v=20251022', event)">『영과 영 (Soul and Zero)』 보도자료</a>
-        <a class="list" href="#" onclick="openPDF('/oneness-god_press_ko.pdf?v=20251022', event)">『하나님과의 대화 (Conversation with Oneness God)』 보도자료</a>
-        <a class="list" href="#" onclick="openPDF('/nosome_press_ko.pdf?v=20251022', event)">『무유 (Nosome)』 보도자료</a>
-
-        <div class="hint">모바일/인앱에서는 Google Viewer로 자동 열림. PC 브라우저는 PDF.js(뷰어)로 열립니다.</div>
-      </section>
-
-      <!-- 추천사(Endorsements) -->
-      <section id="endorsements" class="card">
-        <h3>🏅 추천사 (Endorsements)</h3>
-
-        <!-- 사용자가 언급하신 “영과영·하나님과의 대화” 두 건 -->
-        <a class="list" href="#" onclick="openPDF('/soul-and-zero-review_ko.pdf?v=20251022', event)">『영과 영 (Soul and Zero)』 추천사 PDF</a>
-        <a class="list" href="#" onclick="openPDF('/oneness-god-review_ko.pdf?v=20251022', event)">『하나님과의 대화 (Conversation with Oneness God)』 추천사 PDF</a>
-
-        <div class="hint">※ 파일명이 저장소의 실제 파일과 다르면 경로만 맞춰 주세요.</div>
-      </section>
-
-      <!-- 시리즈 빠른 이동 -->
       <section class="card">
-        <h3>🎞 시리즈 보기 (Episodes)</h3>
+        <h3>📘 시리즈 가이드</h3>
         <div class="btnrow">
-          <a class="btn" href="/NCG_Series_Guide_KR/guide.html?v=3#episodes">에피소드 목록 (KR)</a>
-          <a class="btn" href="/NCG_Series_Guide_EN/guide.html?v=1#episodes">Episodes (EN)</a>
+          <a class="btn" href="/NCG_Series_Guide_KR/guide.html?v=20251022a">KR 가이드 열기</a>
+          <a class="btn" href="/NCG_Series_Guide_EN/guide.html?v=20251022a">EN Guide</a>
         </div>
-        <div class="hint">가이드 내에서 각 회차의 유튜브, 설명, 자료 링크로 이동합니다.</div>
+        <div class="hint">※ 둘 다 <b>동일 도메인 내부 파일</b>로만 이동합니다.</div>
       </section>
 
-      <!-- 문제 해결 & 안내 -->
       <section class="card">
-        <h3>🛠 사용/문제해결 안내</h3>
-        <ul style="margin:0; padding-left: 18px; line-height:1.7;">
-          <li><b>모바일/카톡/페북 인앱</b>에서는 <b>Google Viewer</b>로 열려 “다운로드만 뜨는 문제”를 회피합니다.</li>
-          <li>PC·일반 브라우저는 <code>viewer.html</code> (PDF.js)로 열어 즉시 미리보기합니다.</li>
-          <li>캐시 문제 발생 시 주소 끝의 <code>?v=20251022</code> 숫자만 올려 다시 배포하세요.</li>
-          <li>대표 OG 이미지: <code>/og-default.jpg</code> 경로를 실제 파일에 맞게 유지하세요.</li>
+        <h3>📣 보도자료 (Press)</h3>
+        <a class="list" href="/soul-and-zero_press_ko.pdf?v=20251022a" onclick="openPDF('/soul-and-zero_press_ko.pdf?v=20251022a', event)">『영과 영』 보도자료</a>
+        <a class="list" href="/oneness-god_press_ko.pdf?v=20251022a" onclick="openPDF('/oneness-god_press_ko.pdf?v=20251022a', event)">『하나님과의 대화』 보도자료</a>
+        <a class="list" href="/nosome_press_ko.pdf?v=20251022a" onclick="openPDF('/nosome_press_ko.pdf?v=20251022a', event)">『무유(Nosome)』 보도자료</a>
+        <div class="hint">모두 내부 뷰어(`/viewer.html`)로만 열립니다.</div>
+      </section>
+
+      <section class="card">
+        <h3>🏅 추천사 (Endorsements)</h3>
+        <a class="list" href="/soul-and-zero-review_ko.pdf?v=20251022a" onclick="openPDF('/soul-and-zero-review_ko.pdf?v=20251022a', event)">『영과 영』 추천사</a>
+        <a class="list" href="/oneness-god-review_ko.pdf?v=20251022a" onclick="openPDF('/oneness-god-review_ko.pdf?v=20251022a', event)">『하나님과의 대화』 추천사</a>
+        <div class="hint">내부 PDF 미리보기 전용. 다운로드 팝업 없이 열립니다.</div>
+      </section>
+
+      <section class="card">
+        <h3>🔒 외부 링크 잠금 이유</h3>
+        <ul style="margin:0; padding-left:18px; line-height:1.7">
+          <li>인앱 브라우저가 외부 도메인을 감지하면 앱(채널)로 강제 전환하는 경우가 많습니다.</li>
+          <li>따라서 랜딩(루트)은 <b>내부 링크만 제공</b>하도록 잠금 구성했습니다.</li>
+          <li>유튜브 등 외부로 나갈 링크는 <b>가이드 페이지</b> 내부에서 단계적으로 노출하세요.</li>
         </ul>
       </section>
     </div>
 
-    <footer>
-      © 2025 Byung Youn Kim, Chairman of the New Consilience Group (NCG). All rights reserved.
-    </footer>
+    <footer>© 2025 Byung Youn Kim, Chairman of the New Consilience Group (NCG)</footer>
   </div>
 </body>
 </html>
