@@ -5,7 +5,7 @@
   <title>신통신통회 YouTube 채널</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Open Graph (Facebook / KakaoTalk / Messenger) -->
+  <!-- Open Graph -->
   <meta property="og:url" content="https://bykim5710.github.io/series.kr/channel.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="신통신통회 YouTube 채널" />
@@ -23,10 +23,30 @@
   <meta name="twitter:title" content="신통신통회 YouTube 채널" />
   <meta name="twitter:description" content="종교혁명 시리즈를 구독하고 새 영상을 가장 먼저 만나보세요." />
 
-  <!-- Redirect to YouTube (subscribe popup) -->
-  <meta http-equiv="refresh" content="0; url=https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1" />
+  <!-- 캔오니컬(선택) -->
+  <link rel="canonical" href="https://bykim5710.github.io/series.kr/channel.html" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; display:flex; min-height:100svh; align-items:center; justify-content:center; }
+    .card { text-align:center; max-width:560px; padding:24px; border:1px solid #e5e7eb; border-radius:12px; }
+    .btn { display:inline-block; margin-top:16px; padding:12px 18px; background:#ff0000; color:#fff; font-weight:700; text-decoration:none; border-radius:8px; }
+  </style>
 </head>
 <body>
-  <p>신통신통회 YouTube 채널로 이동합니다...</p>
+  <div class="card">
+    <h1>신통신통회 YouTube 채널로 이동합니다…</h1>
+    <p>잠시만 기다리시면 자동으로 이동합니다. 바로 이동하려면 아래 버튼을 눌러주세요.</p>
+    <a class="btn" href="https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1">🔔 구독 팝업으로 이동</a>
+  </div>
+
+  <script>
+    // 페북/카톡/트위터/슬랙 등 스크래퍼는 JS를 실행하지 않음.
+    // 사람(브라우저)에게만 0.5초 후 자동 이동
+    const botRe = /(facebookexternalhit|Twitterbot|Slackbot|WhatsApp|Telegram|Discordbot|Googlebot|bingbot|KAKAOTALK|KAKAOBOT|Naver-Yeti|Daum)/i;
+    if (!botRe.test(navigator.userAgent)) {
+      setTimeout(function () {
+        location.href = "https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1";
+      }, 500);
+    }
+  </script>
 </body>
 </html>
