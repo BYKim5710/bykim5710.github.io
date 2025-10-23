@@ -1,0 +1,17 @@
+title: NCG Series
+ep: "02"   # ← 다음 회차 때 "03"으로만 바꾸세요
+
+bases:
+  en: "https://bykim5710.github.io/series"
+  kr: "https://bykim5710.github.io/series.kr"
+
+youtube_handle: "@BYKIM-c2s"
+
+email:
+  en: "bykim571020@gmail.com"
+  kr: "bykim57@hanmail.net"
+
+# (선택) 재생목록 링크가 있으시면 넣어두면 좋습니다.
+playlist:
+  en: "https://www.youtube.com/playlist?list=YOUR_EN_PLAYLIST_ID"
+  kr: "https://www.youtube.com/playlist?list=YOUR_KR_PLAYLIST_ID"
