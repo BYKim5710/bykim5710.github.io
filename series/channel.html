@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NCG YouTube Channel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Open Graph (Facebook / KakaoTalk / Messenger) -->
+  <meta property="og:url" content="https://bykim5710.github.io/series/channel.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NCG YouTube Channel" />
+  <meta property="og:description" content="Subscribe to the Religious Revolution Series and see new videos first." />
+  <meta property="og:image" content="https://bykim5710.github.io/series/og-latest.png" />
+  <meta property="og:image:secure_url" content="https://bykim5710.github.io/series/og-latest.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NCG Religious Revolution Series thumbnail" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NCG YouTube Channel" />
+  <meta name="twitter:description" content="Subscribe to the Religious Revolution Series and see new videos first." />
+  <meta name="twitter:image" content="https://bykim5710.github.io/series/og-latest.png" />
+
+  <link rel="canonical" href="https://bykim5710.github.io/series/channel.html" />
+
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; height: 100svh; display: grid; place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #fafafa;
+    }
+    .card {
+      width: min(640px, 92vw);
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 14px;
+      padding: 24px 28px; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,.05);
+    }
+    h1 { font-size: 22px; margin: 0 0 10px; }
+    p  { margin: 0; color: #4b5563; line-height: 1.5; }
+    .btn {
+      display: inline-block; margin-top: 18px; padding: 12px 18px;
+      background: #cc0000; color: #fff; font-weight: 700; border-radius: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Redirecting to the NCG YouTube Channel…</h1>
+    <p>You’ll be redirected shortly. To go now, tap the button below.</p>
+    <a class="btn" href="https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1">🔔 Open Subscribe Popup</a>
+  </div>
+
+  <script>
+    // Scrapers (FB/Kakao/Twitter/search bots) do not run JS → OG image stays fixed.
+    const botUa = /(facebook|twitter|slack|discord|telegram|whatsapp|kakao|naver|google|bing|yeti|bot)/i;
+    if (!botUa.test(navigator.userAgent)) {
+      setTimeout(() => {
+        location.href = "https://www.youtube.com/@BYKIM-c2s?sub_confirmation=1";
+      }, 1200);
+    }
+  </script>
+</body>
+</html>
